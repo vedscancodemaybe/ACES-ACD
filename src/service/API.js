@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const uri = "192.168.1.6";
-const BASE_URL = process.env.BASE_URL || `http://${uri}:5000`;
+const BASE_URL = `http://${uri}:5000`;
 
 var Endpoint = {
   Blog: "/blog",

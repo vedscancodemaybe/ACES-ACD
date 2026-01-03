@@ -1,20 +1,22 @@
 
-import Try from "../../../../assets/vv.jpg";
+import Try from "../../../../assets/acd2026.png";
 import Dil from "../../../../assets/Dil.jpg";
 
 export const EventData = [
    {
-    Name: "VISION VOYAGE 2.0",
-    About: "Roadmap for students",
-    Date: "3-9-2025",
-    Details: "VISION VOYAGE 2.0",
-    MInfo: "This event aimed at guiding first-year  ",
-    AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
+    id: "acd-2k26",
+    Name: "ACES Community day 2k26",
+    About: "-",
+    Date: "29-1-2026 & 30-1-2026",
+    Details: "ACES Community day 2k26",
+    MInfo: "-  ",
+    AInfo: "-",
     Link: "https://docs.google.com/forms/d/e/1FAIpQLSe0sAp8OyQjVopCJ-HqJqMA2Llkh-TIWRBjtFhcuI_exoSMHw/viewform?usp=header",
     Image: Try,
     isRegistrationClosed: false
   },
   {
+    id: "dil-chahta-hai",
     Name: "DIL CHAHTA HAI",
     About: "Donation Drive",
     Date: "19-10-2024",
@@ -25,5 +27,5 @@ export const EventData = [
     Image: Dil,
     isRegistrationClosed: true
   },
- 
+
 ];

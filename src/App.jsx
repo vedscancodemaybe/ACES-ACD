@@ -14,6 +14,8 @@ import Footer from "./components/footer";
 import EventRegistrationForm from "./components/form";
 import Community from "./components/JoinCommunity";
 import { PageNotFound } from "./components/404";
+import Register from "./components/forms/Register";
+
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/our-Team" element={<OurTeam />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/register" element={<EventRegistrationForm />} />
+          <Route path="/register/:eventId" element={<Register />} />
           <Route path="/error" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="/error" />} />
         </Routes>
