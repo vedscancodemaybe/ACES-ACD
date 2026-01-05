@@ -4,7 +4,7 @@ import { useParams, Navigate } from "react-router-dom";
 const EVENTS = {
   "acd-2k26": {
     title: "ACES Community Day 2026",
-    price: 499, // UI only
+    price: 499,
     registrationOpen: true,
   },
   "dil-chahta-hai": {
@@ -41,7 +41,6 @@ const Register = () => {
     setLoading(true);
 
     try {
-      // 1️⃣ Create order (ONLY eventId sent)
       const orderRes = await fetch(
         "http://localhost:5000/api/payment/create-order",
         {
@@ -57,7 +56,6 @@ const Register = () => {
 
       const order = await orderRes.json();
 
-      // 2️⃣ Razorpay options
       const options = {
         key: "rzp_test_XXXXXXXXXX", // 🔴 REPLACE with your Razorpay TEST Key ID
         amount: order.amount,
